@@ -1,0 +1,64 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: rgb(236, 231, 231);
+    }
+    
+    .css {
+        font-family: 'Cinzel', serif;
+        font-size: 150px;
+        color: rgb(32, 129, 120);
+        animation: animate 10s linear infinite;
+        letter-spacing: -5px;
+        text-decoration: none;
+        animation: animate1 3s infinite;
+    }
+    
+    .page1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 33vh;
+    }
+    
+    .icon {
+        /* justify-content: center; */
+        width: 60%;
+        height: 50px;
+        font-size: 30px;
+    }
+    
+    .icon ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    
+    .icon ul li {
+        margin: 10px;
+        padding: 0px;
+    }
+    
+    @keyframes animate {
+        0% {
+            filter: hue-rotate(0deg);
+        }
+        100% {
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    @keyframes animate1 {
+        0% {
+            transform: translateY(-33px);
+        }
+        50% {
+            transform: translateY(100px);
+        }
+        100% {
+            transform: translateY(-33px);
+        }
+    }
